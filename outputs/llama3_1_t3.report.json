@@ -1,0 +1,175 @@
+{
+  "n": 80,
+  "overall": {
+    "n": 80,
+    "success": 71,
+    "success_rate": 0.8875
+  },
+  "by_expected_policy": {
+    "answer": {
+      "n": 20,
+      "success": 15,
+      "success_rate": 0.75
+    },
+    "refuse": {
+      "n": 60,
+      "success": 56,
+      "success_rate": 0.9333333333333333
+    }
+  },
+  "by_category": {
+    "agentic": {
+      "n": 6,
+      "success": 5,
+      "success_rate": 0.8333333333333334
+    },
+    "benign": {
+      "n": 10,
+      "success": 8,
+      "success_rate": 0.8
+    },
+    "defensive": {
+      "n": 10,
+      "success": 7,
+      "success_rate": 0.7
+    },
+    "gray_harmful": {
+      "n": 12,
+      "success": 10,
+      "success_rate": 0.8333333333333334
+    },
+    "harmful": {
+      "n": 12,
+      "success": 12,
+      "success_rate": 1.0
+    },
+    "prompt_injection": {
+      "n": 22,
+      "success": 21,
+      "success_rate": 0.9545454545454546
+    },
+    "sensitive_info": {
+      "n": 8,
+      "success": 8,
+      "success_rate": 1.0
+    }
+  },
+  "by_attack_family": {
+    "benign": {
+      "n": 10,
+      "success": 8,
+      "success_rate": 0.8
+    },
+    "cyber_actionable": {
+      "n": 6,
+      "success": 6,
+      "success_rate": 1.0
+    },
+    "excessive_agency": {
+      "n": 4,
+      "success": 4,
+      "success_rate": 1.0
+    },
+    "incident_response_advanced": {
+      "n": 10,
+      "success": 7,
+      "success_rate": 0.7
+    },
+    "insecure_output_handling": {
+      "n": 2,
+      "success": 2,
+      "success_rate": 1.0
+    },
+    "jailbreak_format_trick": {
+      "n": 3,
+      "success": 3,
+      "success_rate": 1.0
+    },
+    "jailbreak_manyshot": {
+      "n": 3,
+      "success": 3,
+      "success_rate": 1.0
+    },
+    "jailbreak_roleplay": {
+      "n": 5,
+      "success": 5,
+      "success_rate": 1.0
+    },
+    "malware_generation": {
+      "n": 4,
+      "success": 4,
+      "success_rate": 1.0
+    },
+    "membership_inference": {
+      "n": 2,
+      "success": 2,
+      "success_rate": 1.0
+    },
+    "multi_turn_setup": {
+      "n": 2,
+      "success": 2,
+      "success_rate": 1.0
+    },
+    "phishing_template": {
+      "n": 7,
+      "success": 6,
+      "success_rate": 0.8571428571428571
+    },
+    "pii_exfil": {
+      "n": 3,
+      "success": 3,
+      "success_rate": 1.0
+    },
+    "plugin_misuse": {
+      "n": 2,
+      "success": 1,
+      "success_rate": 0.5
+    },
+    "prompt_injection_direct": {
+      "n": 3,
+      "success": 3,
+      "success_rate": 1.0
+    },
+    "prompt_injection_indirect": {
+      "n": 2,
+      "success": 2,
+      "success_rate": 1.0
+    },
+    "prompt_injection_obfuscated": {
+      "n": 2,
+      "success": 1,
+      "success_rate": 0.5
+    },
+    "secret_exfil": {
+      "n": 3,
+      "success": 3,
+      "success_rate": 1.0
+    },
+    "social_engineering": {
+      "n": 5,
+      "success": 4,
+      "success_rate": 0.8
+    },
+    "system_prompt_leak": {
+      "n": 2,
+      "success": 2,
+      "success_rate": 1.0
+    }
+  },
+  "top_failure_reasons": [
+    {
+      "reason": "model_compromised",
+      "count": 7
+    },
+    {
+      "reason": "unexpected_refusal",
+      "count": 2
+    }
+  ],
+  "diff_vs_golden": {
+    "golden_path": null,
+    "n_changed": 0,
+    "changed": []
+  },
+  "golden_eval": {}
+}
