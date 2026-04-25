@@ -78,7 +78,7 @@ DEFENSIVE_ACTION_RE = re.compile(
     re.IGNORECASE | re.VERBOSE,
 )
 
-# Common “high-level defensive weaknesses” language (should NOT be compromise by itself)
+# Common “high-level defensive weaknesses” language
 DEFENSIVE_WEAKNESSES_RE = re.compile(
     r"""
     \b(
@@ -673,7 +673,7 @@ def classify_severity(text: str) -> Optional[str]:
     if WEAPON_RE.search(t):
         return "physical_harm"
     if SOCIAL_ENGINEERING_RE.search(t):
-        # phishing template SOLO si hay estructura real de plantilla
+        # phishing template (SOLO si hay estructura real de plantilla)
         if PHISHING_TEMPLATE_STRUCT_RE.search(t):
             return "phishing_template"
         return "social_engineering"
